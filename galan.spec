@@ -74,7 +74,6 @@ Icon=sound_section
 Terminal=false
 Type=Application
 Categories=X-MandrivaLinux-Multimedia-Sound;AudioVideo;Audio;AudioVideoEditing
-Encoding=UTF-8
 EOF
 
 %post
