@@ -73,7 +73,7 @@ Exec=%{_bindir}/%{name}
 Icon=sound_section
 Terminal=false
 Type=Application
-Categories=X-MandrivaLinux-Multimedia-Sound;AudioVideo;Audio;AudioVideoEditing
+Categories=X-MandrivaLinux-Multimedia-Sound;AudioVideo;Audio;AudioVideoEditing;
 EOF
 
 %post
