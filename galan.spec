@@ -1,6 +1,6 @@
 %define	name	galan
 %define	version	0.3.0
-%define	release	%mkrel 0.beta7.1
+%define	release	%mkrel 0.beta7.2
 
 %define	major	0
 %define	libname	%mklibname %name %major
@@ -51,29 +51,16 @@ do
 rm -fr $i
 done
 
-#menu
-install -d -m 0755 %buildroot/%_menudir
-cat > %buildroot/%_menudir/%{name} <<EOF
-?package(%{name}): \
-command="%{name}" \
-title="Galan" \
-longtitle="Audio processing" \
-needs="x11" \
-section="Multimedia/Sound" \
-icon="sound_section.png" \
-xdg="true"
-EOF
-
 mkdir -p %{buildroot}%{_datadir}/applications
 cat > %{buildroot}%{_datadir}/applications/mandriva-%{name}.desktop << EOF
 [Desktop Entry]
 Name=Galan
-Comment=%{Summary}
+Comment=Graphical audio processing toolkit
 Exec=%{_bindir}/%{name}
 Icon=sound_section
 Terminal=false
 Type=Application
-Categories=X-MandrivaLinux-Multimedia-Sound;AudioVideo;Audio;AudioVideoEditing;
+Categories=AudioVideo;Audio;AudioVideoEditing;
 EOF
 
 %post
@@ -92,6 +79,3 @@ rm -rf $RPM_BUILD_ROOT
 %_libdir/%name
 %_datadir/%name
 %_datadir/applications/mandriva-%{name}.desktop
-%_menudir/*
-
-
