@@ -13,7 +13,6 @@ Source0:	%name-%{version}_beta7.tar.bz2
 URL: 		http://galan.sourceforge.net/
 License: 	GPL
 Group: 		Sound
-BuildRoot: 	%{_tmppath}/%{name}-buildroot
 BuildRequires:  libalsa-devel libaudiofile-devel libsndfile-devel
 BuildRequires:	pkgconfig esound-devel libvorbis-devel
 Buildrequires:  gtk2-devel gtkglarea-devel
