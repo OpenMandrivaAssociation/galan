@@ -1,6 +1,6 @@
 %define	name	galan
 %define	version	0.3.0
-%define	release	%mkrel 0.beta7.2
+%define	release	%mkrel 0.beta7.3
 
 %define	major	0
 %define	libname	%mklibname %name %major
