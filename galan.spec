@@ -8,7 +8,7 @@ Name:		galan
 Version:	0.3.0
 Release:	0.%{beta}.4
 Source0:	%{name}-%{version}_%{beta}.tar.bz2
-Url:		http://galan.sourceforge.net/
+Url:		https://galan.sourceforge.net/
 License:	GPLv2+
 Group:		Sound
 BuildRequires:	fftw2-devel
