@@ -11,6 +11,7 @@ Source0:	%{name}-%{version}_%{beta}.tar.bz2
 Url:		https://galan.sourceforge.net/
 License:	GPLv2+
 Group:		Sound
+BuildRequires:	make
 BuildRequires:	fftw2-devel
 BuildRequires:	gtkglarea-devel
 BuildRequires:	pkgconfig(alsa)
